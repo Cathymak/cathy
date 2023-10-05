@@ -1,10 +1,9 @@
-import React from 'react'
+import { Typography } from "@mui/material"
 
 export default function Notes() {
   return (
     <div>
-    <React/>
-      Notes page
+    <Typography variant="h4">Notes page</Typography>
     </div>
   )
 }

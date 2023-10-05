@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Notes from '/pages/Notes'
-import Create from '/pages/Create'
+import { BrowserRouter as Router } from 'react-router-dom';
+import Create from './pages/Create';
+import Notes from './pages/Notes';
+import { Link } from '@mui/material';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Notes />
-        </Route>
-        <Route path="/create">
+    <Link path="/notes">
+      <Notes />
+     </Link>
+        <Link path="/create">
           <Create />
-        </Route>
-      </Switch>
+        </Link>
     </Router>
+    
   );
 }
 
